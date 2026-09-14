@@ -11,7 +11,7 @@
         p.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
         #map { height: 600px; width: 100%; max-width: 1000px; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .info-box { max-width: 1000px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        
+
         /* Стили для попапа */
         .leaflet-popup-content {
             width: 280px !important;
@@ -34,6 +34,26 @@
             font-size: 13px;
             line-height: 1.4;
         }
+
+        /* Стили для блока источников */
+        .sources {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .sources ul {
+            padding-left: 20px;
+            color: #444;
+        }
+        .sources li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .sources h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +66,21 @@
     <div class="info-box">
         <h3>Как пользоваться картой:</h3>
         <p>Нажми на любую метку на карте, чтобы увидеть фотографию, историческую справку и точный адрес. Всего в путеводителе 9 локаций.</p>
+    </div>
+
+    <!-- Блок с источниками -->
+    <div class="info-box sources">
+        <h3>📚 Источники и литература</h3>
+        <p>При создании путеводителя использовались следующие материалы:</p>
+        <ul>
+            <li>Официальный сайт туристического маршрута «Синяя линия» Екатеринбурга.</li>
+            <li>Материалы Музея истории и археологии Урала (Зал памяти Романовых).</li>
+            <li>Сайт Духовно-просветительского центра «Царский».</li>
+            <li>Публикации о пребывании царской семьи в Екатеринбурге (исторические статьи).</li>
+            <li>Материалы следствия 1918–1919 годов по делу о расстреле царской семьи.</li>
+            <li>Документальные фильмы и исторические исследования о доме Ипатьева.</li>
+        </ul>
+        <p><small>Фотографии взяты из открытых источников (Wikimedia Commons, официальные сайты храмов и музеев).</small></p>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
